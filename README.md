@@ -1,4 +1,21 @@
+# Case Study #1 - Danny's Diner
 
+Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favourite foods: sushi, curry and ramen.
+
+Danny’s Diner is in need of your assistance to help the restaurant stay afloat - the restaurant has captured some very basic data from their few months of operation but have no idea how to use their data to help them run the business.
+
+## Problem Statement
+Danny wants to use the data to answer a few simple questions about his customers, especially about their visiting patterns, how much money they’ve spent and also which menu items are their favourite. Having this deeper connection with his customers will help him deliver a better and more personalised experience for his loyal customers.
+
+He plans on using these insights to help him decide whether he should expand the existing customer loyalty program - additionally he needs help to generate some basic datasets so his team can easily inspect the data without needing to use SQL.
+
+Danny has provided you with a sample of his overall customer data due to privacy issues - but he hopes that these examples are enough for you to write fully functioning SQL queries to help him answer his questions!
+
+Danny has shared with you 3 key datasets for this case study:
+- sales
+- menu
+- members
+- 
 ## Case Study Questions
 
 #### 1. What is the total amount each customer spent at the restaurant?
@@ -166,7 +183,7 @@ GROUP BY tempt.customer_id
 ##### Result
 ![Result](https://lh3.googleusercontent.com/fife/AK0iWDyEu01oXiBcltruhNOwUMZdWf7oYleLbQxcsYiPTiMQQGcqaIEwN6VS-z4gEF6Q6ChdVfAVIB11DF0CEBf5muivkv-X0I5mote0ELueS-2trgt0T_AIUR1z92jONPBqFWGdNGMPp_SRyzZUz3TMgC_MclNwk1U4DudsHxRCZXm66o_rq3gLuIPxyiCDeWqyTyPFKDQOK6sXD3GaoMEq8_h5WEdhqP9e8trO5mod6i9_3FRtp6eewtraE31ZuMtaINBKeOLs2_Yh1KSAPRaNCBzjCf-zQKLXa_hGWOGaaDAPPQ06e2uc5JbApT9xbarpiNT0arNPi6TQI-fu8hcr8IywkdUwVQ1ay_XBK7IGLB391uJMQh9TJ8sJvi-IEz4jRlXCB3ybh6Htp5ezS1HrFrAHzYkm_9DpjzBzODyIuIqXDZLrZvFST5VstVxDYddQToPm4lDsAKQ9raLIySplZjG9crwh64lamY1jYi57p4NNNaLHpOJtv6rtfTeILwFd0iEu2RwdAp_AUKveAesp3YALjKMt19dB2VfPXuW6Qb2UxrY6eEU7eO0VEA8IMpU9HR0cQXTHh2ISAy42r4q5Of2896__2T_ePLmhg5FEALpztZHUbAoampzPNmlBiPr-pPnIFCb0pnxCmVdrwhv_hA-_aRMgCCuhJ4mWYB18ikzoCXE-H-rs6b9QoROhiZYbICmSWVf0QV6-SDs_711B5omb2xj1hcpJRbtDw_D7JFRtyKDAh_kapklPpPLPEBXV6dm_B9NybQE4Gg2AWhDf19NCY6EEkBtF7y_IcyyNDwIct147MABtIMsWyweshR_SddSms2B9Lg0WdOqwH03AijCtiw9-so2OEyM6IUjsF0yOfwf1ZcWjMYBxsbnfuX8wJltvrx9YDPH_fD9fxbWC8SnQfs-s9bAL9ghy3-rZNhpGP7EWEr0IlgK9qDa8eS4-_wV-Zz0hHL_Nr9NQQQ58BqZ0kD9ZURRA-70GdR82iuuxTiOIg-USH3Db1sFqoeMeGXX0uct5-L9RwFe3H3w4nIM5EWEt4U-s1h8wAIF5Qg-OMzVat7_mwKPtYK0IsdfPFW4Cjq86Mx6GvjftBd_6geuNPvHYbCJAv05MgmhnuwUUA-wYB92GhIoG7QpxMnm-A-m-V1kF-5ODFRxUOscYEbD_wjLlZWkhzV7Y4uTZP9cE7Da4FQMgAMA475eNmw89w8INMwn4l0wroCMvVeGWA0pNRZE62APYVYfaF_dfbLoxksbhYbTtkn54HtgNUBxBzv_L84GGN6-bINoB-Pauu8f_S8XyjsPbRNnCKQhrUSXpnNUc8ZmHp1dgNmEAcrelHT3n652niiCupuDm1zggooLfrMpsaDM3vonpKZnGjp0Ndk3LmrIIIi05XznxZ7tHKK_NuQrpQbUGJBgJwFPUSR61AnupwshZ52RjFONN6eh8yuj2UIFYFyyar04erFrJc2277CL33saHkD4cYfp5a1L_oOE718oZ-HE1j2CHjah58O3Sgw94NyhkVwjSbHoI-h8G3_hj28zBuRQv3-3-Y4ZL8XTwj8p1OORmsyiAHfZ1Mtyc5GB36venbgUGnmnbuHognlvskBkyhjUxoycB9DIXRrHjKfKxTr0RFf7PigGN8w5yr3hxUyLWJQ=w868-h1005)
 
-#### --Bonus Questions: Join All The Things - Recreate the table with: customer_id, order_date, product_name, price, member (Y/N)
+#### 11. Bonus Questions: Join All The Things - Recreate the table with: customer_id, order_date, product_name, price, member (Y/N)
 
 ```
 SELECT s.customer_id, s.order_date, m.product_name, m.price,
@@ -184,7 +201,7 @@ JOIN members AS mm
 ##### Result
 ![Result](https://lh3.googleusercontent.com/fife/AK0iWDw-8919sxvnmZlkDCJSngY-TVHRaP7dGrS2TMv4l-YzaImCQVukjeY_TLOiSCYtbdb-omeazVnyK_yR5BON6_08TcEF9I_wOEHps6LyCR6PkJLJWgcxHAGMXJNC-kzYKgvMKpSdHrSFG95fr37GQzIqFo4bkc9GJ1kx3uT9MeErKFtCvbKhI-Eojx5TeAmK1uVDTYl9f8fKfQRzDOURf1eb2rJtiKKvWehT4y_klQTtzyP_sBL9NgseGuKI0TXQrd-WjQVWG324fc2XIj7LqW9RJfEHMdMSkHkZ5u-zeQsHhvIdBNrmwJSzTzWqvG9CEBvztkSNhEQXhveCCbWA0eSuMHGXW-5L9_vXiquvwvv_TbE2iDK02T-tKoH6XFWVyghLEM1nppkUWqVJXPYHVXLWIdj6wcDai-FNdgxUno4a-QLPjY3NkRDdc4lBDQJg86mvUudvj_fxvLVsivqjUgB7eoKDmAr7yrufwmf88kky7BWk6wM1dD9BW1f2oav3sLr_bCT-beatl_uF8g2zuJ4F-PYVv_-ga-FTJtGkkCLH71oiDiJ-hGtsdsjc1ARGTZmLYErHmTJC-KLEtgjvB7DaV0y5USlICzPyMo8rQHzEfRwjoWxuWIHi5MP5kLQDabH-j5tWaATfFu8eVu2b_CJ30oBdb-qmhOoEHJ7zNK4tdWILLueYNQIrw3ssT6S2G_BMoiMCGNYTYTtg8HIFW5FG4PGdECDj47gyO3Fy3i06HV1wIPLQd1XWCVNfPUN3pWzelS6WqAadBUCQ4q1s_w-wNXhbXwXGev9WPzoEOTItsf0BUpMoGauMgQavvZFpS56o61rsPVbskbrBSOHoHflhRmXJ8qukuhbe-ud88yT27t4xcTtXFH26FD8anneYIqlJEzVD5HKYhPXyOTSgaZGR4MYDyNhfFhNgasnyllLvBUHfjK63xvWkRwRdQdRb2dWZrEnnOkH36T7WSyPdwObi4pfCZGenTm1GN7eso2xFXiNjksFJf-g3M0XuZDsZWXKPWpatXlUEjnqYHMcAvM8odTWVDKm9Kk979k5g5EV_uJturNdgEZ92JuL788OQz3JGgllAx6tLVQlqpPAYCKQFgN-hEe2HqSGun83wOArYiVu13T0mxhJ8oilqm6CU1pY-5xh7FJPrcPJWyy9MTRpUUuLlwcLPmVaqjH8FOuTm9EFD86nWHMnEq4oex-JrnVwZPufuh2BoCfnPRnklrfIh_SwId32__bUACAHVF0VQ_JwmXaYhvkJFej2CPjCyRlgvuxRdLFnHKmkQM1eegEjfYT1MOEyjPZbXehA3p67H0z04NtIBEGh-aLFI2WHPvba3xFOu8uzcmmG9BanHWOySym_bxmcVTj9srUoXBSy6Xw9bXa2EBKh8woditgldWEQtNgYcqfD02MhoUVNPuYZbOtTEpy7p3jC8OePnu0y-HHYpCmDdbHBCmnjxuqxrCGpmINZy_upqmLWLZ5C2fnR-gR8uHUcZoM80_2YZsq9_U3L-ucjenBnQxZ0ss3U2q7YDSd_Rzop9Jf1JZZfvp6RypnnOcSmRvd2PcIV6zJHV0VZRNLPZVzFMKFf94ZWPPEVCWZpdNhYXcugCosbRLrv0PPc4Sdu152P-aDRGbIRzv_gPAplVzRZSrQ=w868-h1005)
 
-#### Danny also requires further information about the ranking of customer products,but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
+#### 12. Danny also requires further information about the ranking of customer products,but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
 
 ```
 WITH summary_cte AS 
