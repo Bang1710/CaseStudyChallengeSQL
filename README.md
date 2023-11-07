@@ -3,7 +3,7 @@
 
 #### 1. What is the total amount each customer spent at the restaurant?
 
-```http
+```
 SELECT s.customer_id, SUM(m.price) AS total_amt
 FROM sales AS s 
 JOIN menu AS m on s.product_id = m.product_id
