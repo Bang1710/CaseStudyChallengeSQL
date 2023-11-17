@@ -32,7 +32,7 @@ Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runn
 ***View my solution
  [here](https://github.com/qanhnn12/8-Week-SQL-Challenge/tree/main/Case%20Study%20%232%20-%20Pizza%20Runner).***
 
- ## 🍊 Case Study #8 - Fresh Segments
+ ## 🍊 Case Study - Fresh Segments
 
 Danny created Fresh Segments, a digital marketing agency that helps other businesses analyse trends in online ad click behaviour for their unique customer base.
   
