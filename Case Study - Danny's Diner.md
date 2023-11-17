@@ -307,16 +307,3 @@ FROM summary_cte;
 | C           | 2021-01-07 | ramen         | 12    | N      | NULL    |
 
 
-## Authors
-
-- [Văn Bang ](https://github.com/Bang1710)
-
-## Feedback
-
-If you have any feedback, please reach out to us at nvbang1710@gmail.com
-
-## Support
-
-For support, email nvbang1710@gmail.com
-
-
