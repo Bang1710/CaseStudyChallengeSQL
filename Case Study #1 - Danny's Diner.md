@@ -19,7 +19,7 @@ Danny has shared with you 3 key datasets for this case study:
 
 #### 1. What is the total amount each customer spent at the restaurant?
 
-```
+```TSQL
 SELECT s.customer_id, SUM(m.price) AS total_amt
 FROM sales AS s 
 JOIN menu AS m on s.product_id = m.product_id
@@ -30,7 +30,7 @@ GROUP BY s.customer_id;
 
 #### 2. How many days has each customer visited the restaurant?
 
-```
+```TSQL
 SELECT s.customer_id, COUNT(DISTINCT(s.order_date)) as count_vst
 FROM sales as s
 GROUP BY s.customer_id;
@@ -40,7 +40,7 @@ GROUP BY s.customer_id;
 
 #### 3. What was the first item from the menu purchased by each customer?
 
-```
+```TSQL
 WITH tempt
 AS
 (
@@ -60,7 +60,7 @@ GROUP BY customer_id, order_date, product_name
 
 #### 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
 
-```
+```TSQL
 SELECT TOP 1 m.product_name, COUNT(s.product_id) as most_purchase
 FROM sales as s
 JOIN menu as m on s.product_id = m.product_id
@@ -72,7 +72,7 @@ ORDER BY most_purchase DESC;
 
 #### 5. Which item was the most popular for each customer?
 
-```
+```TSQL
 WITH tempt
 AS 
 (
@@ -91,7 +91,7 @@ WHERE rank = 1;
 
 #### 6. Which item was purchased first by the customer after they became a member?
 
-```
+```TSQL
 WITH tempt
 AS 
 (
@@ -112,7 +112,7 @@ WHERE rank = 1
 
 #### 7. Which item was purchased just before the customer became a member?
 
-```
+```TSQL
 SELECT s.customer_id, m.join_date, s.order_date, s.product_id, me.product_name
 FROM sales as s 
 JOIN members as m on s.customer_id = m.customer_id
@@ -124,7 +124,7 @@ WHERE s.order_date < m.join_date
 
 #### 8. What is the total items and amount spent for each member before they became a member?
 
-```
+```TSQL
 SELECT s.customer_id, COUNT(s.product_id) as total_items, SUM(me.price) as amount_spent
 FROM sales as s 
 JOIN members as m on s.customer_id = m.customer_id
@@ -137,7 +137,7 @@ GROUP BY s.customer_id;
 
 #### 9. If each $1 spent equates to 10 points and sushi has a x2 points multiplier - how many points would each customer have?
 
-```
+```TSQL
 with points_table
 AS 
 (
@@ -158,7 +158,7 @@ GROUP BY s.customer_id;
 
 #### 10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 
-```
+```TSQL
 WITH tempt
 AS
 (
@@ -184,7 +184,7 @@ GROUP BY tempt.customer_id
 
 #### 11. Bonus Questions: Join All The Things - Recreate the table with: customer_id, order_date, product_name, price, member (Y/N)
 
-```
+```TSQL
 SELECT s.customer_id, s.order_date, m.product_name, m.price,
     (CASE
       WHEN mm.join_date > s.order_date THEN 'N'
@@ -202,7 +202,7 @@ JOIN members AS mm
 
 #### 12. Danny also requires further information about the ranking of customer products,but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
 
-```
+```TSQL
 WITH summary_cte AS 
 (
    SELECT s.customer_id, s.order_date, m.product_name, m.price,
