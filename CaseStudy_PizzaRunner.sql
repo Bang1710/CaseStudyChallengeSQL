@@ -4,7 +4,6 @@ Note:
 Otherwise, we can't insert new values to table [customer_order].
 
 2. In table [pizza_names], [pizza_recipes], and [pizza_toppings], change datatype from TEXT to VARCHAR. 
-Otherwise, we will face the error in Q4.
 */ 
 
 
