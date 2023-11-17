@@ -1,5 +1,5 @@
 # 🍕 Case Study - Pizza Runner
-# ❓Case Study Questions
+### ❓Case Study Questions
 ## A. Pizza Metrics
 ### Data cleaning
   
