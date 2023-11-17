@@ -1,4 +1,3 @@
-# CaseStudyChallengeSQL
 # :fire: SQL Challenge with Case Study
 
 This repository contains my solution for the [#8WeekSQLChallenge](https://8weeksqlchallenge.com/) using Azure Data Studio or MS SQL Server.
