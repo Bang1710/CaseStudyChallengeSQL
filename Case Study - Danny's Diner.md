@@ -15,7 +15,7 @@ Danny has shared with you 3 key datasets for this case study:
 - sales
 - menu
 - members
-## :fire: Case Study Questions
+## ❓ Case Study Questions
 
 #### 1. What is the total amount each customer spent at the restaurant?
 
