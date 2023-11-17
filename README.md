@@ -41,15 +41,15 @@ Clients share their customer lists with the Fresh Segments team who then aggrega
 Danny has asked for your assistance to analyse aggregated metrics for an example client and provide some high level insights about the customer list and their interests.
 
 ***View my solution [here](https://github.com/qanhnn12/8-Week-SQL-Challenge/tree/main/Case%20Study%20%238%20-%20Fresh%20Segments).***
-
-## :fire: Authors
+---
+## Authors
 
 - [Văn Bang ](https://github.com/Bang1710)
-
-## :fire: Feedback
+---
+## Feedback
 
 If you have any feedback, please reach out to us at nvbang1710@gmail.com
-
-## :fire: Support
+---
+## Support
 
 For support, email nvbang1710@gmail.com
