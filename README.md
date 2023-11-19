@@ -8,8 +8,6 @@ Thanks @DataWithDanny for interesting SQL case studies! :wave:🏻
 ## 📕 Table of Contents
 * [Case Study - Danny's Diner]()
 * [Case Study - Pizza Runner]()
-* [Case Study - Fresh Segments]()
-
 ---
 ## 🍜 Case Study - Danny's Diner
 
